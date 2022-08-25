@@ -1,5 +1,4 @@
 import React from "react";
-import {FaUserAlt} from "react-icons/fa";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { useState } from "react";
 
@@ -7,10 +6,6 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 
 function CheckoutNavbar() {
-  const [user]=useState({
-  fullName:"Harini",
-  image:"https://thumbs.dreamstime.com/b/young-woman-avatar-cartoon-character-profile-picture-young-brunette-woman-short-hair-avatar-cartoon-character-vector-149728784.jpg",
-  })
   const reduxState = useSelector((globalState) => globalState.user.user);
 
   return (

@@ -22,7 +22,7 @@ function CartSM({ toggle }) {
     <>
       <div className="md:hidden flex items-center justify-between">
         <div className="flex flex-col items-start">
-          <small className="flex items-center gap-1" onClick={toggle}>
+          <small className="flex items-cetner gap-1" onClick={toggle}>
             {reduxState.length} Item <IoMdArrowDropup />
           </small>
           <h4>
@@ -71,42 +71,6 @@ function CartLG({ toggle }) {
 
 function CartContainer() {
   const [isOpen, setIsOpen] = useState(false);
-const [cartData, setCartData]= useState([]);
-const [foods,setFoods]=useState([
-  {
-    image:"https://recipesofhome.com/wp-content/uploads/2020/02/chilli-paneer-recipe.jpg",
-    name:"chilli panner gravy",
-    price:"157.50",
-    rating:4,
-    descript:"chicken Noodeles + Chilli Chiken + Manchurian",
-    quantity: 1,
-  },
-  {
-    image:"https://recipesofhome.com/wp-content/uploads/2020/02/chilli-paneer-recipe.jpg",
-    name:"chilli panner gravy",
-    price:"157.50",
-    rating:4,
-    descript:"chicken Noodeles + Chilli Chiken + Manchurian",
-    quantity: 1,
-  },
-  {
-    image:"https://recipesofhome.com/wp-content/uploads/2020/02/chilli-paneer-recipe.jpg",
-    name:"chilli panner gravy",
-    price:"157.50",
-    rating:4,
-    descript:"chicken Noodeles + Chilli Chiken + Manchurian",
-    quantity: 1,
-  },
-  {
-    image:"https://recipesofhome.com/wp-content/uploads/2020/02/chilli-paneer-recipe.jpg",
-    name:"chilli panner gravy",
-    price:"157.50",
-    rating:4,
-    descript:"chicken Noodeles + Chilli Chiken + Manchurian",
-    quantity: 1,
-  },
-]);
-
 
   const reduxState = useSelector((globalState) => globalState.cart.cart);
 

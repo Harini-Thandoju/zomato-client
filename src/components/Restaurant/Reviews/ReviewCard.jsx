@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { getUser } from "../../../redux/reducers/user/user.action";
 
 function ReviewCard(props) {
-  const [user, setUser] = useState("Harini Thandoju");
+  const [user, setUser] = useState("Aditya Gusain");
   console.log(props);
 
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ function ReviewCard(props) {
               />
             </div>
             <div className="flex flex-col">
-              <h3 className="text-lg font-semibold">{props.fullName}</h3>
+              <h3 className="text-lg font-semibold">{user}</h3>
               <small className="text-gray-500">
                 5 Reviews &#8226; 3 Followers
               </small>

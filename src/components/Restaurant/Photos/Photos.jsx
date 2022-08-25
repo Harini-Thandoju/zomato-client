@@ -9,16 +9,7 @@ import { getImage } from "../../../redux/reducers/image/image.action";
 import PhotoCollection from "./PhotoCollection";
 
 function Photos() {
-  const [photos, setPhotos] = useState([
-    "https://b.zmtcdn.com/data/pictures/5/19584295/d2e9c0fa83e287d9b3a30450a076d7c8.jpg",
-   "https://b.zmtcdn.com/data/dish_photos/ca4/6b71cd8a5d00439dd35ccc60f4dacca4.png",
-    "https://b.zmtcdn.com/data/dish_photos/e61/82773f03986ce4aadca470840d52ae61.jpg",
-    "https://b.zmtcdn.com/data/dish_photos/9e2/6490eb2abca1ef612d26241d743849e2.jpg",
-    "https://b.zmtcdn.com/data/pictures/5/19584295/d2e9c0fa83e287d9b3a30450a076d7c8.jpg",
-   "https://b.zmtcdn.com/data/dish_photos/ca4/6b71cd8a5d00439dd35ccc60f4dacca4.png",
-    "https://b.zmtcdn.com/data/dish_photos/e61/82773f03986ce4aadca470840d52ae61.jpg",
-    "https://b.zmtcdn.com/data/dish_photos/9e2/6490eb2abca1ef612d26241d743849e2.jpg",
-  ]);
+  const [photos, setPhotos] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
 

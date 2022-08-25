@@ -12,14 +12,13 @@ function NutritionCard(props) {
           <img
             src={props.image}
             alt="suppliments"
-            className="w-full h-full lg-object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="p-3 flex flex-col gap-2">
           <div className="flex mt-2 items-center gap-3">
             <div className="w-4 h-4">
               <img
-              
                 src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png"
                 alt=""
                 className="w-full h-full"

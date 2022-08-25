@@ -26,24 +26,7 @@ function CheckoutPage() {
       address: "123 Main St",
     },
   ];
-  const foods=[
-    // {
-    //   image:"https://recipesofhome.com/wp-content/uploads/2020/02/chilli-paneer-recipe.jpg",
-    //   name:"chilli panner gravy",
-    //   price:"157.50",
-    //   rating:4,
-    //   descript:"chicken Noodeles + Chilli Chiken + Manchurian",
-    //   quantity: 1,
-    // },
-    // {
-    //   image:"https://recipesofhome.com/wp-content/uploads/2020/02/chilli-paneer-recipe.jpg",
-    //   name:"chilli panner gravy",
-    //   price:"157.50",
-    //   rating:4,
-    //   descript:"chicken Noodeles + Chilli Chiken + Manchurian",
-    //   quantity: 3,
-    // },
-  ];
+
   const reduxStateCart = useSelector((globalState) => globalState.cart.cart);
   const reduxStateUser = useSelector(
     (globalState) => globalState.user.user.user
@@ -51,7 +34,7 @@ function CheckoutPage() {
 
   const payNow = () => {
     let options = {
-      key: "rzp_test_BQnKTa6StL7IwT",
+      key: "rzp_test_q1aD8S4CGOEb75",
       amount:
         reduxStateCart.reduce(
           (total, current) => total + current.totalPrice,
@@ -62,7 +45,7 @@ function CheckoutPage() {
       description: "Fast Delivery Service",
       image:
         "https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png",
-      handler: (data) => {//handler will run at the end of the operstion(at end of payment)
+      handler: (data) => {
         alert("Payment Successful");
         console.log(data);
       },

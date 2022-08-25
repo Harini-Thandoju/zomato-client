@@ -70,7 +70,7 @@ function DeliveryCarousel() {
       <h1 className="text-xl mb-4 font-semibold">
         Inspitation for your first order
       </h1>
-      <div className="lg:hidden flex  lg:gap-0 flex-wrap justify-between">
+      <div className="lg:hidden flex gap-3 lg:gap-0 flex-wrap justify-between">
         {categories.map((food) => (
           <DeliveryCategory {...food} />
         ))}

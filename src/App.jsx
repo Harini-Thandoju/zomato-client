@@ -11,7 +11,7 @@ import CheckoutLayoutHoc from "./HOC/Checkout.hoc";
 
 // Pages
 import HomePage from "./pages/HomePage";
-import RestaurantPage from "./pages/RestaurantPage";
+// import RestaurantPage from "./pages/RestaurantPage";
 import Checkout from "./pages/CheckoutPage";
 import GoogleAuth from "./pages/GoogleAuth";
 import RedirectRestaurant from "./pages/Restaurant/Redirect";
